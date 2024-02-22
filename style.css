@@ -1,0 +1,47 @@
+.container{
+  height: 100%;
+  width: 1200px;  
+  margin: 0 auto;
+} 
+.gallery{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; 
+}
+.hea{
+  font-size: 60px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: brown;
+}
+.box{
+  width: 30%;
+  margin-bottom : 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  position: relative;
+}
+.box img{
+  filter: grayscale(100%);
+  border-radius: 3%;
+  width: 300px;
+  height: 450px;
+}
+.box:hover img{
+  filter: grayscale(0%);
+  box-shadow: 0px 0px 30px , 0px 0px 30px ;
+  transform: scale(1.07);
+  transition: 0.5s;
+}
+.box figcaption{
+  position: absolute;
+  bottom: 0;
+  left: 15px;
+  font-weight: bolder;
+  color: white;
+  background: linear-gradient(0deg black,white);
+  opacity: 0;
+}
+.box:hover figcaption{
+  opacity: 1;
+}
